@@ -1,0 +1,455 @@
+@font-face {
+    font-family: "Space Mono";
+    src: url(./fonts/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splitter-logo {
+    margin-top: 163px;
+}
+
+.container-main {
+    width: 920px;
+    height: 481px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    margin-top: 90px;
+}
+
+.container-settings {
+    width: 379px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+
+.container-results {
+    width: 413px;
+    height: 417px;
+    margin-left: 24px;
+}
+
+.header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    font-family: "Space Mono";
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 379px;
+    height: 48px;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.panel:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.number {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474B;
+    margin-right: 20px;
+}
+
+.bill-input {
+    width: 225px;
+    height: 46px;
+    text-align: right;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+}
+
+.people-input {
+    width: 125px;
+    height: 46px;
+    text-align: right;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+    padding-right: 10px;
+    outline: none;
+    border: none;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.panel-tip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 379px;
+    height: 152px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.box {
+    width: 117px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00474B;
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #9FE8DF;
+    border-radius: 5px;
+    color: #00474B;
+}
+
+.custom-input {
+    width: 105px;
+    height: 46px;
+    text-align: right;
+    background-color: #F3F9FA;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+    padding-right: 10px;
+}
+
+.custom-input:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.custom-input:focus {
+    outline: none;
+    border: 2px solid #26C2AE;
+}
+
+.header-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notzero {
+    color: #E17457;
+}
+
+.container-results {
+    background-color: #00474B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.panel-results {
+    display: flex;
+    justify-content: space-between;
+    width: 333px;
+    height: 71px;
+}
+
+.panel-amount {
+    margin-top: 40px;
+}
+
+.panel-total {
+    margin-top: 25px;
+}
+
+.panel-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-header-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.person-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+    padding: 0;
+    margin: 0;
+}
+
+.amount {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26C2AE;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #26C2AE;
+    border-radius: 5px;
+    width: 333px;
+    height: 48px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #00474B;
+    margin-top: 122px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.active {
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+.zeropeople {
+    border: 2px solid #E17457;
+}
+
+@media screen and (max-width: 480px) {
+    
+.splitter-logo {
+    margin-top: 50px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 789px;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 50px;
+}
+
+.container-settings {
+    width: 311px;
+    height: 436px;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.container-results {
+    width: 327px;
+    height: 257px;
+    margin-left: 0;
+}
+
+.header {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.panel {
+    width: 311px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.panel:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.number {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.bill-input {
+    width: 225px;
+    height: 46px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-right: 10px;
+}
+
+.people-input {
+    width: 125px;
+    height: 46px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-right: 10px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.panel-tip {
+    width: 311px;
+    height: 185px;
+}
+
+.box {
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.box:hover {
+    border-radius: 5px;
+}
+
+.custom-input {
+    width: 105px;
+    height: 46px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-right: 10px;
+}
+
+.custom-input:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.custom-input:focus {
+    outline: none;
+    border: 2px solid #26C2AE;
+}
+
+.container-results {
+    border-radius: 15px;
+}
+
+.panel-results {
+    width: 281px;
+    height: 71px;
+    align-items: center;
+}
+
+.panel-amount {
+    margin-top: 15px;
+}
+
+.panel-total {
+    margin-top: 0;
+}
+
+.person-header-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.person-text {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.amount {
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -1px;
+
+}
+
+.button {
+    border-radius: 5px;
+    width: 281px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+}
