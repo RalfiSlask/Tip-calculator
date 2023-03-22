@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip Calculator App
 
-![Design preview for the Password generator app coding challenge](./preview.jpg)
+![Design preview for the Password generator app coding challenge](./preview.png)
 
 
 Built with
